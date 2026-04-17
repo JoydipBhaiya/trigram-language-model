@@ -1,0 +1,20 @@
+=== Preprocessing ===
+Vocabulary size: 3080
+Total tokens:     20387
+
+=== Text Generation (Laplace Smoothing) ===
+Seed: the king
+Generated: the king blockes wrangle shreeking vol sight mayst lights improue publike seen wolfe choakd manner threat hangd hollow curse walkd thicke dyest legges vesture teeth causes wayes spirits call sides
+
+=== Perplexity ===
+Test sentence: 'the king is dead'
+Perplexity: 3080.0000
+
+=== Bonus ===
+Generated (Interpolation): the king and he shall be satisfied and by that which he did the generall he would not haue it so bru i will not come to the capitoll to
+Perplexity (Interpolation): 366.4244
+
+Comparison:
+1. Laplace Smoothing resulted in a Perplexity of 3080.00 (exactly the Vocabulary Size), showing the model is as confused as a random guess when encountering unseen trigrams.     
+2. Linear Interpolation significantly improved Perplexity to 366.42 by leveraging bigram and unigram frequencies when specific trigram contexts were missing.
+3. The Interpolated story is noticeably more coherent and Shakespearean, whereas the Laplace model produced a fragmented 'word salad' due to over-inflated rare word probabilities.
